@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Quicksand|Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -91,6 +96,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 #projects h1 {
@@ -112,11 +118,75 @@ a {
     margin-bottom: 80px;
 }
 
-#projects>div>div>img {
-    width: 20%;
+#projects p {
+    position: absolute;
+    font-size: 30px;
+    z-index: -1;
+    color: rgb(185, 113, 113);
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#t1 {
+    top: 29%;
+    left: 14.5%;
+}
+
+#t2 {
+    top: 29%;
+    left: 44%;
+}
+
+#t3 {
+    top: 29%;
+    left: 74.2%;
+}
+
+#t4 {
+    top: 55%;
+    left: 14.8%;
+}
+
+#t5 {
+    top: 55%;
+    left: 44%;
+}
+
+#t6 {
+    top: 55%;
+    left: 74.2%;
+}
+
+#t7 {
+    top: 82%;
+    left: 14.8%;
+}
+
+#t8 {
+    top: 82%;
+    left: 44%;
+}
+
+#t9 {
+    top: 82%;
+    left: 74.2%;
+}
+
+#projects>div>div>span>img {
+    width: 80%;
     height: 10%;
     display: block;
     margin: 20px auto;
+    z-index: -3;
+}
+
+#projects>div>div>span:hover img {
+    opacity: .5;
+    z-index: -2;
+}
+
+#projects>div>div>p:hover #projects>div>div>span>img {
+    opacity: .5;
+    z-index: -2;
 }
 
 #wall {
